@@ -6,6 +6,7 @@ import "./detalhe-style.css";
 import { ThumbsUp } from "lucide-react";
 import { Eye } from "lucide-react";
 import { Tag } from "lucide-react";
+import Voltar from "../../components/botoes-voltar";
 
 interface PostProp {
   id: number;
@@ -63,6 +64,7 @@ export default function Detalhe() {
           </div>
         </div>
       </div>
+      <Voltar />
     </div>
   );
 }

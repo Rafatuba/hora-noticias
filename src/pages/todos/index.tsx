@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import { api } from "../../services/api";
 import { Link } from "react-router";
 import "./todos.css";
+import Voltar from "../../components/botoes-voltar";
 
 interface Post {
   id: number;
@@ -42,6 +43,7 @@ export default function Todos() {
           ))
         )}
       </div>
+      <Voltar />
     </div>
   );
 }
