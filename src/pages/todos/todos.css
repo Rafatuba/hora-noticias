@@ -1,0 +1,25 @@
+.pagina-todos {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  h1 {
+    margin: 20px;
+  }
+
+  .posts-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 20px;
+
+    a {
+      color: aliceblue;
+    }
+
+    a:hover {
+      color: rgb(117, 117, 117);
+    }
+  }
+}
