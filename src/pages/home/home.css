@@ -1,0 +1,55 @@
+.botoes {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+  margin: 20px 0;
+
+  button {
+    font-size: 25px;
+    padding: 10px 40px;
+    background-color: #0023c4;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+  }
+
+  button:hover {
+    background-color: #3751c0;
+    color: #ff5cf4;
+  }
+}
+
+.cards-container {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 5px;
+
+  margin: 40px;
+  flex-wrap: wrap;
+}
+
+.card-aleatorio {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 380px;
+
+  border: 1px solid #b6b6b6;
+  background-color: #1e1e1e;
+
+  img {
+    width: 100%;
+    object-fit: contain;
+  }
+
+  .descricao {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    padding: 10px;
+  }
+}
