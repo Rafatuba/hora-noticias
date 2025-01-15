@@ -29,9 +29,7 @@ export default function Detalhe() {
   async function getPosts() {
     try {
       const response = await api.get<PostProp>(`/posts/${id}`);
-      console.log(response.data);
       setPosts(response.data);
-      // setPosts(Array.isArray(response.data) ? response.data : []);
     } catch (error) {
       console.error("Falha ao carregar: " + error);
     }

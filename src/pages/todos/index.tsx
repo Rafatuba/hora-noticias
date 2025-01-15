@@ -21,7 +21,6 @@ export default function Todos() {
   async function getPosts() {
     try {
       const response = await api.get("/posts");
-      console.log(response.data.posts);
       setPosts(response.data.posts);
     } catch (error) {
       console.error("Falha ao carregar: " + error);
