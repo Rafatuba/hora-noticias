@@ -1,5 +1,7 @@
 import { Link } from "react-router";
 import "./home.css";
+import { Eye } from "lucide-react";
+import { ThumbsUp } from "lucide-react";
 
 export default function Home() {
   const imageUrl = {
@@ -31,6 +33,14 @@ export default function Home() {
               eaque nam?
             </p>
           </div>
+          <div className="likes">
+            <p>
+              <Eye color="red" size={24} /> 5k
+            </p>
+            <p>
+              <ThumbsUp color="red" size={24} /> 3k
+            </p>
+          </div>
         </div>
         <div className="card-aleatorio">
           <img src={imageUrl.tecnologia} alt="" />
@@ -42,6 +52,14 @@ export default function Home() {
               eaque nam?
             </p>
           </div>
+          <div className="likes">
+            <p>
+              <Eye color="red" size={24} /> 4k
+            </p>
+            <p>
+              <ThumbsUp color="red" size={24} /> 2k
+            </p>
+          </div>
         </div>
         <div className="card-aleatorio">
           <img src={imageUrl.alimentacao} alt="" />
@@ -51,6 +69,14 @@ export default function Home() {
               Lorem ipsum dolor, sit amet consectetur adipisicing elit.
               Consequuntur enim rerum odit eos, excepturi dolores molestiae non
               eaque nam?
+            </p>
+          </div>
+          <div className="likes">
+            <p>
+              <Eye color="red" size={24} /> 7k
+            </p>
+            <p>
+              <ThumbsUp color="red" size={24} /> 6k
             </p>
           </div>
         </div>

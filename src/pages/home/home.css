@@ -53,4 +53,21 @@
     gap: 10px;
     padding: 10px;
   }
+
+  .likes {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 20px;
+    width: 100%;
+    padding: 0 0 10px 10px;
+
+    p {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      gap: 5px;
+    }
+  }
 }

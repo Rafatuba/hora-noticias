@@ -3,10 +3,16 @@ import { api } from "../../services/api";
 import { Link } from "react-router";
 import "./todos.css";
 import Voltar from "../../components/botoes-voltar";
+import { Eye } from "lucide-react";
+import { ThumbsUp } from "lucide-react";
 
 interface Post {
   id: number;
   title: string;
+  views: number;
+  reactions: {
+    likes: number;
+  };
 }
 
 export default function Todos() {
@@ -36,8 +42,16 @@ export default function Todos() {
         ) : (
           posts.map((post) => (
             <Link to={`/detalhe/${post.id}`}>
-              <div key={post.id}>
+              <div key={post.id} className="post-card">
                 <h2>{post.title}</h2>
+                <div className="dados-posts">
+                  <p>
+                    <Eye color="red" size={24} /> {post.views ?? 0}
+                  </p>
+                  <p>
+                    <ThumbsUp color="red" size={24} /> {post.reactions?.likes}
+                  </p>
+                </div>
               </div>
             </Link>
           ))
